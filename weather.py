@@ -4,10 +4,10 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
+# store your api key in .env file
 API_KEY = os.getenv("API_KEY")
 
-
+# This function generates latitude and longitude of the city which will then be used by the API.
 def lat_lon(city_name):
 
     geolocator = Nominatim(user_agent="weather_app")
@@ -19,7 +19,7 @@ def lat_lon(city_name):
 
     return None, None
 
-
+# 
 def get_weather(city_name):
 
     lat, lon = lat_lon(city_name)
