@@ -19,7 +19,7 @@ def lat_lon(city_name):
 
     return None, None
 
-# 
+
 def get_weather(city_name):
 
     lat, lon = lat_lon(city_name)
