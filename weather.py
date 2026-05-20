@@ -19,7 +19,11 @@ def lat_lon(city_name):
 
     return None, None
 
+<<<<<<< HEAD
 # Main function to get weather from Open Weather API
+=======
+
+>>>>>>> 27fa60bbd549238223cc6609c390b8c7d2983da7
 def get_weather(city_name):
 
     lat, lon = lat_lon(city_name)
